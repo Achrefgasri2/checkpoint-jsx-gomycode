@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import pc from './img/pc.jpg';
+import html from './video/html.mp4';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+        <div style={{border: 'solid 1px black', maxWidth: '100vw'}}>
+          <h1 className="title">Achref Gasri </h1>
+          <img src={pc} width={320} height={240}/>
+          <img src="/img/iphone.png" width={320} height={240} />
+        </div>
+        <video width={320} height={240} controls>
+        <source src={html} type="video/mp4" />
+      </video>
+
+
+      </div>
   );
 }
 
